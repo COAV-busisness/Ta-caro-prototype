@@ -42,25 +42,37 @@ Atualmente desenvolvido em **Next.js + TypeScript + Sass**, mas com roadmap para
 ## 📂 Estrutura de Pastas
 
 frontend/
-├── components/            # Componentes reutilizáveis (Navbar, Layout, Cards, etc.)
-├── data/                  # Dados estáticos / mocks
-├── node_modules/          # Dependências
-├── pages/                 # Páginas do Next.js
-│   ├── blog/              # Subpáginas do blog
-│   ├── _app.tsx           # Componente principal
-│   ├── index.tsx          # Página inicial
-│   ├── login.tsx
-│   ├── dashboard.tsx
-│   └── settings.tsx
-├── styles/                # Estilos (SCSS / módulos)
-│   ├── authForm/          # Estilos do formulário de autenticação
-│   ├── variables/
-│   │   └── _variables.scss
-│   └── globals.css        # Estilos globais
-├── public/                # Assets públicos (imagens, ícones, fontes)
-├── package.json           # Dependências e scripts
-├── tailwind.config.js     # Configuração do Tailwind (se usado)
-└── tsconfig.json          # Configuração do TypeScript
+├── package.json
+├── tsconfig.json
+├── tailwind.config.js
+├── public/                     # assets públicos (ícones, imagens, fonts)
+├── node_modules/
+└── src/
+    ├── pages/                  # Next.js (pode ser src/pages ou pages/)
+    │   ├── api/
+    │   ├── blog/
+    │   ├── _app.tsx
+    │   ├── index.tsx
+    │   ├── login.tsx
+    │   ├── dashboard.tsx
+    │   └── settings.tsx
+    ├── features/
+    │   ├── auth/
+    │   │   ├── components/     # componentes específicos de auth (AuthForm etc.)
+    │   │   ├── hooks.ts
+    │   │   └── authAPI.ts
+    │   ├── dashboard/
+    │   └── blog/
+    ├── components/              # Componentes UI reutilizáveis (Navbar, Layout, Card)
+    ├── lib/                     # clientes API, helpers, wrappers
+    ├── hooks/                   # hooks reutilizáveis
+    ├── styles/
+    │   ├── globals.css
+    │   ├── tailwind.css
+    │   └── variables/
+    │       └── _variables.scss
+    └── data/                    # mocks / fixtures / seed
+
 
 ## 📦 Instalação e Uso
 
