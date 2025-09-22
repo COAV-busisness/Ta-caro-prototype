@@ -41,6 +41,8 @@ Atualmente desenvolvido em **Next.js + TypeScript + Sass**, mas com roadmap para
 
 ## 📂 Estrutura de Pastas
 
+<pre>
+<code>
 frontend/
 ├── package.json
 ├── tsconfig.json
@@ -72,6 +74,9 @@ frontend/
     │   └── variables/
     │       └── _variables.scss
     └── data/                   # Mocks / fixtures / seed
+</code>
+</pre>
+
 
 
 ## 📦 Instalação e Uso
