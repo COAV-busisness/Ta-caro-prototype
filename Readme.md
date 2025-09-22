@@ -42,22 +42,25 @@ Atualmente desenvolvido em **Next.js + TypeScript + Sass**, mas com roadmap para
 ## 📂 Estrutura de Pastas
 
 frontend/
-│── components/        # Componentes reutilizáveis (Navbar, Layout, Cards, etc.)
-│── data/              # Dados estáticos / mocks
-│── node_modules/      # Dependências
-│── pages/             # Páginas do Next.js
-│   ├── blog/          # Subpáginas do blog
-│   ├── _app.tsx       # Componente principal
-│   ├── index.tsx      # Página inicial
-│   └── ...            # login.tsx, dashboard.tsx, settings.tsx, etc.
-│── styles/            # Estilos (SCSS / módulos)
-│   ├── authForm/      # Estilos do formulário de autenticação
-│   ├── variables/     # _variables.scss
-│   ├── globals.css    # Estilos globais
-│── public/            # Assets públicos (imagens, ícones, fontes)
-│── package.json       # Dependências e scripts
-│── tailwind.config.js # Configuração do Tailwind (se usado)
-│── tsconfig.json      # Configuração do TypeScript
+├── components/ # Componentes reutilizáveis (Navbar, Layout, Cards, etc.)
+├── data/ # Dados estáticos / mocks
+├── node_modules/ # Dependências
+├── pages/ # Páginas do Next.js
+│ ├── blog/ # Subpáginas do blog
+│ ├── _app.tsx # Componente principal
+│ ├── index.tsx # Página inicial
+│ ├── login.tsx
+│ ├── dashboard.tsx
+│ └── settings.tsx
+├── styles/ # Estilos (SCSS / módulos)
+│ ├── authForm/ # Estilos do formulário de autenticação
+│ ├── variables/
+│ │ └── _variables.scss
+│ └── globals.css # Estilos globais
+├── public/ # Assets públicos (imagens, ícones, fontes)
+├── package.json # Dependências e scripts
+├── tailwind.config.js # Configuração do Tailwind (se usado)
+└── tsconfig.json # Configuração do TypeScript
 
 
 📸 **Preview da Estrutura (VSCode)**  
