@@ -41,21 +41,37 @@ Atualmente desenvolvido em **Next.js + TypeScript + Sass**, mas com roadmap para
 
 ## 📂 Estrutura de Pastas
 
-📁 **Estrutura de Pastas (recomendada)**
-
 frontend/
 ├── package.json
 ├── tsconfig.json
-├── public/                # assets públicos (imagens, ícones, fontes)
+├── tailwind.config.js
+├── public/                     # Assets públicos (ícones, imagens, fonts)
+├── node_modules/
 └── src/
-    ├── pages/             # Páginas Next.js
-    ├── features/          # Features/domínios (auth, dashboard, blog)
-    ├── components/        # Componentes UI reutilizáveis
-    ├── lib/               # Helpers / API clients
-    ├── hooks/             # Hooks customizados
-    ├── styles/            # globals, scss, variables
-    └── data/              # mocks / fixtures
-
+    ├── pages/                  # Next.js (pode ser src/pages ou pages/)
+    │   ├── api/
+    │   ├── blog/
+    │   ├── _app.tsx
+    │   ├── index.tsx
+    │   ├── login.tsx
+    │   ├── dashboard.tsx
+    │   └── settings.tsx
+    ├── features/
+    │   ├── auth/
+    │   │   ├── components/     # Componentes específicos de auth (AuthForm etc.)
+    │   │   ├── hooks.ts
+    │   │   └── authAPI.ts
+    │   ├── dashboard/
+    │   └── blog/
+    ├── components/             # Componentes UI reutilizáveis (Navbar, Layout, Card)
+    ├── lib/                    # Clientes API, helpers, wrappers
+    ├── hooks/                  # Hooks reutilizáveis
+    ├── styles/
+    │   ├── globals.css
+    │   ├── tailwind.css
+    │   └── variables/
+    │       └── _variables.scss
+    └── data/                   # Mocks / fixtures / seed
 
 
 ## 📦 Instalação e Uso
