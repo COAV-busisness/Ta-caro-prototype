@@ -1,0 +1,8 @@
+// https://create-react-app.dev/docs/adding-a-css-modules-stylesheet
+@import "../variables/variables.scss";
+.login-register {
+  @include _flex(flex, center, center);
+}
+.link {
+  color: var(--tacaro-red);
+}

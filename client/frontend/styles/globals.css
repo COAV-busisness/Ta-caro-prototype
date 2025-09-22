@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Minimal resets to match original */
+:root {
+  --tacaro-red: #D91E2E;
+  --tacaro-yellow: #FFD700;
+  --tacaro-gray-light: #f5f5f5;
+  --tacaro-gray: #e0e0e0;
+  --tacaro-gray-dark: #333333;
+}
+
+html, body, #__next {
+  height: 100%;
+}
+
+body {
+  @apply bg-white text-[color:var(--tacaro-gray-dark)] leading-7;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Buttons */
+.btn {
+  @apply inline-block rounded-full px-6 py-3 font-bold text-tacaro-yellow bg-tacaro-yellow text-[color:var(--tacaro-red)] hover:translate-y-[-2px];
+}
+
+/* small utilities to keep visual parity */
+.container-custom {
+  @apply w-full max-w-[1200px] mx-auto px-5;
+}
+.header-shadow {
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+.card-base {
+  @apply bg-white rounded-lg shadow-md p-5;
+}
+.ad-box {
+  @apply bg-tacaro-gray-light rounded-md p-4 text-center;
+}
+.store-icon {
+  @apply text-tacaro-red;
+  animation: pulse 2s infinite;
+}
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.08); }
+  100% { transform: scale(1); }
+}
+
+.dropdown-hidden { display: none; }
+.dropdown-show { display: block; }

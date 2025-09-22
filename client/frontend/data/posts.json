@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "title": "Dicas para economizar no supermercado",
+    "summary": "Aprenda práticas simples para comparar preços e economizar nas compras do mês.",
+    "date": "2025-09-10"
+  },
+  {
+    "id": 2,
+    "title": "Como escolher a loja mais barata",
+    "summary": "Estratégias para identificar onde os produtos estão com o melhor custo-benefício.",
+    "date": "2025-09-05"
+  },
+  {
+    "id": 3,
+    "title": "Promoções semanais: quando valer a pena comprar",
+    "summary": "Avalie os descontos e o histórico de preços antes de aproveitar promoções.",
+    "date": "2025-08-28"
+  }
+]
